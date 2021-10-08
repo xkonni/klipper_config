@@ -1,8 +1,4 @@
-### Windows users: To edit this file use Notepad++, VSCode, Atom or SublimeText.
-### Do not use Notepad or WordPad.
-
-### MacOSX users: If you use Textedit to edit this file make sure to use 
-### "plain text format" and "disable smart quotes" in "Textedit > Preferences"
+# vim: ft=conf
 
 ### Configure which camera to use
 #
@@ -13,7 +9,7 @@
 #
 # Defaults to auto
 #
-#camera="auto"
+camera="raspi"
 
 ### Additional options to supply to MJPG Streamer for the USB camera
 #
@@ -26,9 +22,9 @@ camera_usb_options="-r 800x600 -f 10"
 
 ### Additional webcam devices known to cause problems with -f
 #
-# Apparently there a some devices out there that with the current 
-# mjpg_streamer release do not support the -f parameter (for specifying 
-# the capturing framerate) and will just refuse to output an image if it 
+# Apparently there a some devices out there that with the current
+# mjpg_streamer release do not support the -f parameter (for specifying
+# the capturing framerate) and will just refuse to output an image if it
 # is supplied.
 #
 # The webcam daemon will detect those devices by their USB Vendor and Product
@@ -42,7 +38,7 @@ camera_usb_options="-r 800x600 -f 10"
 #
 # Using the following option it is possible to add additional devices. If
 # your webcam happens to show above symptoms, try determining your cam's
-# vendor and product id via lsusb, activating the line below by removing # and 
+# vendor and product id via lsusb, activating the line below by removing # and
 # adding it, e.g. for two broken cameras "aabb:ccdd" and "aabb:eeff"
 #
 #   additional_brokenfps_usb_devices=("aabb:ccdd" "aabb:eeff")
@@ -57,7 +53,7 @@ camera_usb_options="-r 800x600 -f 10"
 # Defaults to 10fps
 #
 # camera_raspi_options="-fps 10"
-camera_raspi_options="-r 800x600 -fps 10"
+camera_raspi_options="-rot 180 -x 800 -y 600 -fps 10 -roi 0.0,0.0,0.998,1"
 
 ### Configuration of camera HTTP output
 #
