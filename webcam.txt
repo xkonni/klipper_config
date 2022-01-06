@@ -54,7 +54,8 @@ camera_usb_options="-r 800x600 -f 10"
 #
 # camera_raspi_options="-x 800 -y 600 -fps 10 -roi 0.0,0.0,0.998,1 -rot 180"
 # camera_raspi_options="-x 800 -y 600 -fps 10 -roi 0.0,0.0,0.998,1"
-camera_raspi_options="-x 800 -y 600 -roi 0.0,0.0,0.998,1"
+# camera_raspi_options="-x 800 -y 600 -roi 0.0,0.0,0.998,1"
+camera_raspi_options="-x 1024 -y 768 -roi 0.0,0.0,0.998,1"
 
 ### Configuration of camera HTTP output
 #
